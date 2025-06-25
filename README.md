@@ -1,42 +1,45 @@
+# Bank Management System
 
-# 🏦 Bank Management System
+A secure and scalable application for managing customer accounts, transactions, balance inquiries, and admin-level oversight. Built with Python and backed by PostgreSQL or SQLite, the system integrates user authentication, role-based access control, and a robust database schema.
 
-A full-featured **Bank Management System** built with a secure authentication system and integrated database, designed to manage customer data, transactions, and account operations.
+## Overview
 
-## 🚀 Features
+This Bank Management System is designed to simulate core banking operations through a clean CLI or basic GUI. It supports multiple user roles, enforces authentication, and maintains transactional integrity. Ideal for learning backend system design, database interaction, and secure user authentication.
 
-- 🔐 **User Authentication**  
-  - Secure login and signup system  
-  - Role-based access (e.g., admin, user)
+## Key Features
 
-- 🧾 **Account Management**  
-  - Create, update, and delete accounts  
-  - View balance and transaction history
+- **User Authentication**
+  - Secure login and registration flow
+  - Password hashing and input validation
+  - Session management or token-based auth
 
-- 💸 **Transactions**  
-  - Deposit, withdraw, and transfer funds  
-  - Transaction logs with timestamps
+- **Account Management**
+  - Create, view, update, and delete accounts
+  - Role-based permissions (Admin/User)
 
-- 🗃️ **Database Integration**  
-  - Persistent data storage  
-  - Structured schema for users, accounts, and transactions
+- **Transaction Handling**
+  - Deposit, withdrawal, and fund transfer
+  - Real-time balance updates with rollback support
+  - Transaction history tracking
 
-## 🛠️ Tech Stack
+- **Database Integration**
+  - PostgreSQL or SQLite as the primary data store
+  - Structured schema with normalization
+  - Uses raw SQL queries or ORM (e.g., SQLAlchemy)
 
-- **Frontend:** `HTML`, `CSS`, `JavaScript` (optional or CLI-based)
-- **Backend:** `Python` / `Node.js` / `Java`
-- **Authentication:** Custom auth / JWT / Session-based
-- **Database:** `SQLite` / `MySQL` / `MongoDB`
+- **Admin Dashboard (CLI/GUI)**
+  - Monitor all user accounts and transactions
+  - View system logs and summaries
 
-## 📁 Project Structure
+## Tech Stack
 
-```bash
-bank-management-system/
-├── src/
-│   ├── auth/              # Authentication logic
-│   ├── db/                # Database models/queries
-│   ├── transactions/      # Deposit, withdrawal, transfer
-│   └── main.py            # Entry point
-├── schema.sql             # DB schema (if applicable)
-├── README.md
-└── requirements.txt       # Dependencies (if Python)
+| Layer         | Technology Used         |
+|---------------|--------------------------|
+| Language      | Python                   |
+| Database      | PostgreSQL / SQLite      |
+| Interface     | Command-line (CLI) or Tkinter (GUI) |
+| Auth System   | Custom implementation with hashed passwords |
+| Deployment    | Local execution, cross-platform support |
+
+
+
